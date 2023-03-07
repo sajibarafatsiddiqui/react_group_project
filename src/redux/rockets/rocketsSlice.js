@@ -17,7 +17,8 @@ export const fetchAllRockets = createAsyncThunk(
 );
 
 const initialState = {
-  books: [],
+  rockets: [],
+  ifSucceed: false,
   isLoading: false,
 };
 
