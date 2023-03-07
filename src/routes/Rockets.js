@@ -19,7 +19,6 @@ const Rockets = () => {
 
   return (
     <div>
-      <h1>Rockets</h1>
       {ifSucceed ? <Rocket rockets={rockets} /> : null}
     </div>
   );
