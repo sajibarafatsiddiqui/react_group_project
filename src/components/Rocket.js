@@ -1,18 +1,24 @@
 import React from 'react';
-// import { useDispatch } from 'react-redux';
 
-const Rocket = () => {
-//   const dispatch = useDispatch(); 
-  return (
-    <div>
-      {/* <img src=""> */}
+const Rocket = ({ rockets }) => {
+    console.log(rockets);
+    return (
       <div>
-        <h2>Falcon</h2>
-        <p>Description goes here</p>
-        <button type="button">Reserve Rocket</button>
+        {rockets.map((rocket) => (
+          <div key={rocket.id}>
+            {/* <div>
+        {rocket.flickr_images.map((imageUrl, index) => (
+          <img key={index} src={imageUrl} alt={`Rocket ${rocket.name}`} />
+        ))}
+      </div> */}
+            <img src={rocket.flickr_images[0]} alt="{rocket.name}" />
+            <h2>{rocket.name}</h2>
+            <p>{rocket.description}</p>
+          </div>
+        ))}
       </div>
-    </div>
-  )
-};
-
-export default Rocket;
+    );
+  };  
+  
+  export default Rocket;
+  

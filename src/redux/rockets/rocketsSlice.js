@@ -8,6 +8,7 @@ export const fetchAllRockets = createAsyncThunk(
   async (thunkAPI) => {
     try {
       const response = await axios.get(baseUrl);
+      console.log(response.data);
       if (response.data === '') return [];
       return response.data;
     } catch (error) {
@@ -27,11 +28,17 @@ const rocketsSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(fetchAllRockets.pending, (state) => {
-      state.isLoading = true;
-    });
+    builder
+      .addCase(fetchAllRockets.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(fetchAllRockets.fulfilled, (state, action) => {
+        state.rockets = action.payload;
+        state.ifSucceed = true;
+        state.isLoading = false;
+      });
   },
-
 });
 
 export default rocketsSlice.reducer;
+
