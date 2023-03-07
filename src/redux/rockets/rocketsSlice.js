@@ -8,7 +8,6 @@ export const fetchAllRockets = createAsyncThunk(
   async (thunkAPI) => {
     try {
       const response = await axios.get(baseUrl);
-      console.log(response.data);
       if (response.data === '') return [];
       return response.data;
     } catch (error) {
@@ -41,4 +40,3 @@ const rocketsSlice = createSlice({
 });
 
 export default rocketsSlice.reducer;
-
