@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+}
+
+.rocket-img {
+  max-width: 20vw;
+  margin: 20px;
+}
+
+.reserve-btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+}
+
+.cancel-btn {
+  background-color: whitesmoke;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 4px;
+  height: 30px;
+}
+
+.badge {
+  background-color: rgb(19, 181, 187);
+  color: white;
+  border-radius: 4px;
+  height: 20px;
+}
