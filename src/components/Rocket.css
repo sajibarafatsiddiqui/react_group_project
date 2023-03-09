@@ -14,3 +14,18 @@
   border-radius: 4px;
   height: 30px;
 }
+
+.cancel-btn {
+    background-color: rgb(245, 245, 245);
+    color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.badge {
+    background-color: rgba(53, 53, 255, 0.678);
+    color: white;
+    border-radius: 4px;
+    height: 20px; 
+}
