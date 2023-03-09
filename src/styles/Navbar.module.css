@@ -21,6 +21,11 @@
   flex: 1;
 }
 
+.navbar_head {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .navbar__title {
   color: #0290ff;
 }

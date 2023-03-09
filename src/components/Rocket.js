@@ -22,11 +22,13 @@ const Rocket = ({ rockets }) => {
     <div>
       {rockets.map((rocket) => (
         <div key={rocket.id} className="container">
-          <img
-            src={rocket.flickr_images[0]}
-            alt={rocket.name}
-            className="rocket-img"
-          />
+          {rocket.flickr_images && rocket.flickr_images.length > 0 && (
+            <img
+              src={rocket.flickr_images[0]}
+              alt={rocket.name}
+              className="rocket-img"
+            />
+          )}
           <div className="text-wrapper">
             <div>
               <h2>{rocket.name}</h2>
@@ -68,7 +70,7 @@ Rocket.propTypes = {
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      flickr_images: PropTypes.arrayOf(PropTypes.string).isRequired,
+      flickr_images: PropTypes.arrayOf(PropTypes.string),
     }),
   ).isRequired,
 };

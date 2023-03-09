@@ -4,9 +4,11 @@ import Logo from './Logo';
 
 const Navbar = () => {
   const navlinks = [
-    { path: '/', text: 'rockets' },
-    { path: 'missions', text: 'missions' },
-    { path: 'profile', text: 'profile' },
+
+    { path: '/', text: 'Rockets' },
+    { path: '/missions', text: 'Missions' },
+    { path: '/profile', text: 'My profile' },
+
   ];
   return (
     <nav className={styles.navbar_container}>

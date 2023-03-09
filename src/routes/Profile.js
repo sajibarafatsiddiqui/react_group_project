@@ -1,30 +1,9 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import Table from 'react-bootstrap/Table';
+import ReservedRockets from 'components/ReservedRockets';
 
-const Profile = () => {
-  const { missions } = useSelector((store) => store.missions);
-  const reservedMissions = missions.filter((mission) => mission.reserved);
-  return (
-    <div>
-
-      <Table>
-        <tbody>
-
-          {reservedMissions.map(
-            (mission) => (
-              <tr key={mission.missionId}>
-                <td key={mission.missionId}>
-                  {mission.missionName}
-                </td>
-              </tr>
-            ),
-          )}
-        </tbody>
-      </Table>
-
-    </div>
-  );
-};
+const Profile = () => (
+  <div>
+    <ReservedRockets />
+  </div>
+);
 
 export default Profile;
