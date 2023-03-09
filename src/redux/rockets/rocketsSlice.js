@@ -1,4 +1,6 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+// redux/rockets/rocketsSlice.js
+
+import { createSelector, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const baseUrl = 'https://api.spacexdata.com/v4/rockets';
@@ -59,6 +61,12 @@ const rocketsSlice = createSlice({
       });
   },
 });
+
+// Selector to get reserved rockets
+export const selectReservedRockets = createSelector(
+  (state) => state.rockets.rockets,
+  (rockets) => rockets.filter((rocket) => rocket.reserved)
+);
 
 export const { reserveRocket, cancelReservation } = rocketsSlice.actions;
 
