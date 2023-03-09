@@ -3,8 +3,6 @@ import { useDispatch } from 'react-redux';
 import { reserveRocket, cancelReservation } from 'redux/rockets/rocketsSlice';
 import './Rocket.css';
 
-const isReserved = (id) => localStorage.getItem(`rocket-${id}`) === 'reserved';
-
 const Rocket = ({ rockets }) => {
   const dispatch = useDispatch();
 

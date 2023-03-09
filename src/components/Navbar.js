@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className={cx(styles.navbar, styles.navbar)}>
         <div className={styles.navbar__content}>
           <Logo className={styles.navbar_title} />
-          <span className={styles.navbar_head}>Space Travelers' Hub</span>
+          <span className={styles.navbar_head}>Space Travelers&apos; Hub</span>
           <ul className={styles.navbar__list}>
             {navlinks.map((navlink) => (
               <li key={navlink.text}>
