@@ -16,16 +16,16 @@
 }
 
 .cancel-btn {
-    background-color: rgb(245, 245, 245);
-    color: red;
-    border: 1px solid red;
-    border-radius: 4px;
-    height: 30px;
+  background-color: whitesmoke;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 4px;
+  height: 30px;
 }
 
 .badge {
-    background-color: rgba(0, 0, 255, 0.678);
-    color: white;
-    border-radius: 4px;
-    height: 20px; 
+  background-color: rgb(19, 181, 187);
+  color: white;
+  border-radius: 4px;
+  height: 20px;
 }

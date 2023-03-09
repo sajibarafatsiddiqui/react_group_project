@@ -5,29 +5,33 @@ import { reserveRocket, cancelReservation } from 'redux/rockets/rocketsSlice';
 import './Rocket.css';
 
 const Rocket = ({ rockets }) => {
-    const dispatch = useDispatch();
-  
-    const handleReserve = (id) => {
-      dispatch(reserveRocket(id));
-    };
-  
-    const handleCancelReservation = (id) => {
-      dispatch(cancelReservation(id));
-    };
-  
-    return (
-      <div>
-        {rockets.map((rocket) => (
-          <div key={rocket.id} className="container">
-            <img
-              src={rocket.flickr_images[0]}
-              alt={rocket.name}
-              className="rocket-img"
-            />
-            <div className="text-wrapper">
+  const dispatch = useDispatch();
+
+  const handleReserve = (id) => {
+    dispatch(reserveRocket(id));
+  };
+
+  const handleCancelReservation = (id) => {
+    dispatch(cancelReservation(id));
+  };
+
+  return (
+    <div>
+      {rockets.map((rocket) => (
+        <div key={rocket.id} className="container">
+          <img
+            src={rocket.flickr_images[0]}
+            alt={rocket.name}
+            className="rocket-img"
+          />
+          <div className="text-wrapper">
             <div>
-              <h2>{rocket.name}</h2> 
-                <p>{rocket.reserved && <span className="badge">Reserved</span>} {rocket.description}</p>
+              <h2>{rocket.name}</h2>
+              <p>
+                {rocket.reserved && <span className="badge">Reserved</span>}
+                {' '}
+                {rocket.description}
+              </p>
             </div>
             {rocket.reserved ? (
               <button
@@ -45,16 +49,24 @@ const Rocket = ({ rockets }) => {
               >
                 Reserve Rocket
               </button>
-             )}
-            </div>
+            )}
           </div>
-        ))}
-      </div>
-    );
-  };
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default Rocket;
 
 Rocket.propTypes = {
-  rockets: PropTypes.string.isRequired,
+  rockets: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      flickr_images: PropTypes.arrayOf(PropTypes.string).isRequired,
+      reserved: PropTypes.bool.isRequired,
+    }),
+  ).isRequired,
 };
