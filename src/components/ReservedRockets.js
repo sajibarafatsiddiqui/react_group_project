@@ -8,7 +8,7 @@ const ReservedRockets = () => {
     console.log(reservedRockets)
     return (
       <div>
-        <h1>My Rockets</h1>
+        <h3>My Rockets</h3>
         {reservedRockets.length > 0 
         ? 
         (reservedRockets.map((rocket) => (

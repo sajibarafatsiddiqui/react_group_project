@@ -5,15 +5,16 @@ import Logo from './Logo';
 
 const Navbar = () => {
   const navlinks = [
-    { path: '/', text: 'rockets' },
-    { path: '/missions', text: 'missions' },
-    { path: '/profile', text: 'profile' },
+    { path: '/', text: 'Rockets' },
+    { path: '/missions', text: 'Missions' },
+    { path: '/profile', text: 'My profile' },
   ];
   return (
     <nav className={styles.navbar_container}>
       <div className={cx(styles.navbar, styles.navbar)}>
         <div className={styles.navbar__content}>
           <Logo className={styles.navbar_title} />
+          <span className={styles.navbar_head}>Space Travelers' Hub</span>
           <ul className={styles.navbar__list}>
             {navlinks.map((navlink) => (
               <li key={navlink.text}>
