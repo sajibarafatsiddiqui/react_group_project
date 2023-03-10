@@ -16,7 +16,7 @@ const MissionList = ({ missions }) => (
           <th className="col-md-1">&nbsp;</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody data-testid="missions-container">
         { missions?.map((mission) => (
           <Mission key={mission.missionId} missionProp={mission} />
         ))}

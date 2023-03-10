@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for <MissionList /> component Should match the snapshot 1`] = `
+<div
+  className="p-4"
+>
+  <table
+    className="table-responsive table table-sm table-striped table-bordered table-hover"
+  >
+    <thead>
+      <tr>
+        <th
+          className="col-md-1"
+        >
+          Mission
+        </th>
+        <th
+          className=""
+        >
+          Description
+        </th>
+        <th
+          className="col-sm-1"
+        >
+          Status
+        </th>
+        <th
+          className="col-md-1"
+        >
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      data-testid="missions-container"
+    >
+      <tr>
+        <td>
+          <strong>
+            Mission 1
+          </strong>
+        </td>
+        <td>
+          Mission Desc 1
+        </td>
+        <td
+          className="align-middle"
+        >
+          <button
+            className="btn btn-secondary btn-sm"
+            disabled={false}
+            type="button"
+          >
+            NOT A MEMBER
+          </button>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <button
+            className="btn btn-outline-secondary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            Join Mission
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            Mission 2
+          </strong>
+        </td>
+        <td>
+          Mission Desc 2
+        </td>
+        <td
+          className="align-middle"
+        >
+          <button
+            className="btn btn-success btn-sm"
+            disabled={false}
+            type="button"
+          >
+            Active Member
+          </button>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <button
+            className="btn btn-outline-danger"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            Leave Mission
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
