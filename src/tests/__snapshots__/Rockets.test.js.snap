@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for <Rockets /> component Should match the snapshot 1`] = `
+<div>
+  <div
+    data-testid="rockets-container"
+  >
+    <div
+      className="container"
+    >
+      <img
+        alt="Rocket 1"
+        className="rocket-img"
+        src="1"
+      />
+      <div
+        className="text-wrapper"
+      >
+        <div>
+          <h2>
+            Rocket 1
+          </h2>
+          <p>
+             
+            Rocket Desc 1
+          </p>
+        </div>
+        <button
+          className="reserve-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </div>
+    <div
+      className="container"
+    >
+      <img
+        alt="Rocket 2"
+        className="rocket-img"
+        src="1"
+      />
+      <div
+        className="text-wrapper"
+      >
+        <div>
+          <h2>
+            Rocket 2
+          </h2>
+          <p>
+             
+            Rocket Desc 2
+          </p>
+        </div>
+        <button
+          className="reserve-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

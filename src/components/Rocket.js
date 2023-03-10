@@ -19,7 +19,7 @@ const Rocket = ({ rockets }) => {
   const isReserved = (id) => localStorage.getItem(`rocket-${id}`) === 'reserved';
 
   return (
-    <div>
+    <div data-testid="rockets-container">
       {rockets.map((rocket) => (
         <div key={rocket.id} className="container">
           {rocket.flickr_images && rocket.flickr_images.length > 0 && (
