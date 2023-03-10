@@ -41,9 +41,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space_Travelers_Hub] <a name="about-project"></a>
+# 📖 [Space Travelers' Hub] <a name="about-project"></a>
 
-**[Space_Travelers_Hub]** is a project where we worked with the real live data from the SpaceX API. We build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+**[Space Travelers' Hub]** is a project where we worked with the real live data from the SpaceX API. We build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -55,6 +55,7 @@
      <li><a href="#">HTML</a></li>
       <li><a href="#">CSS</a></li>
        <li><a href="#">React</a></li>
+       <li><a href="#">Redux</a></li>
   </ul>
 </details>
 
@@ -180,7 +181,7 @@ If you like this project please give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank all my morning session teammates who gave me suggestions regarding this project. 
+We would like to thank all our morning session teammates who gave us suggestions regarding this project. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
