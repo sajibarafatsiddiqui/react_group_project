@@ -5,7 +5,7 @@ import Styles from 'styles/Navbar.module.css';
 const Logo = () => (
   <div className="d-flex justify-content-start">
     <img src={spacehub} alt="Logo" className={Styles.logo} />
-    <h1>Space Traveler&apos;s Hub</h1>
+    <h1>&nbsp;Space Travelers&apos; Hub</h1>
   </div>
 );
 
