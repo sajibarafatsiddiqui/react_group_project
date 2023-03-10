@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for <Profile /> component Should match the snapshot 1`] = `
+<div
+  className="d-flex p-5 gap-5"
+>
+  <div>
+    <h3>
+      My Missions
+    </h3>
+    <p>
+      You have not reserved any missions yet.
+    </p>
+  </div>
+  <div>
+    <h3>
+      My Rockets
+    </h3>
+    <p>
+      You have not reserved any rockets yet.
+    </p>
+  </div>
+</div>
+`;
